@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Task 1</title>
+
+</head>
+<body>
+<table height = "400px" align = "center" border = "0" width="100%" cellpadding="8">
+	<tr >
+		<th width = "40%" align="left">
+			<h1 >HOW-TO: Программа на Python, Часть 1</h1>
+
+			<ul>
+				<li> <a href = "http://142.93.172.35:8080/static/media/python_01_link.html"><em> Программа на Python &#8212; часть 1</em></a></li>
+				<li> <a href = "http://142.93.172.35:8080/static/media/python_02_link.html"><em> Программа на Python &#8212; часть 2</em></a></li>
+				<li> <a href = "http://142.93.172.35:8080/static/media/python_03_link.html"><em> Программа на Python &#8212; часть 3</em></a></li>
+			</ul>
+
+			<h2 id= "chapter 3"> Содержание </h2>
+			<h3>HOW-TO: Программа на Python, Часть 1</h3>
+		</th>
+		<th width = "60%" align="left">
+			<IMG src="../../IMG/IconPython.png"   align="left" alt="Logo">
+		</th>
+
+	</tr>
+</table>
+
+			<ul>
+				<li> <a href = "#chapter 1"> Наша первая программа</a></li>
+				<li> <a href = "#chapter 2"> Пример цикла For</a></li>
+			</ul>
+
+		<p>		Из множества существующих языков программирования Python &#8212; один из самых лёгких
+			<br>в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился.
+			<br>Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не
+			<br>обращают внимания при выборе языка для изучения. В этой статье мы рассмотрим
+			<br>создание консольных приложений, а в следующей &#8212; программирование графических
+			<br>интерфейсов (<u>GUI</u>). Давайте создадим простую программу прямо сейчас.
+		</p>
+	
+	<h2 id="chapter 1"> Наша первая программа</h2>
+	<a href="#chapter 3">К содержанию </a>
+		<p> Наберём код в текстовом редакторе (например, в <strong>gedit</strong>). Потом мы разберёмся, что делает
+			<br>каждая строка и пойдём дальше.
+		</p>
+		<p> Введите эти 4 строки:		</p>
+		<p> <code>#!/usr/bin/env python
+			<br>print 'Hello. I am a python program.'
+			<br>name = raw_input("What is your name?")
+			<br>print "Hello there, " + name + "!"</code>
+		</p>
+		<p> Это всё. Сохраните файл как <strong>hello.py</strong> в любом месте. Я предлагаю сохранить его в папке
+			<br><strong>python_examples</strong> в домашнем каталоге. Этот пример показывает, как просто написать
+			<br>программу на Python. Для запуска программы нужно сделать её файл исполняемым. Для
+			<br>этого введите в терминале
+		</p>
+		<p><code><strong><ins><em>chmod +x hello.py</em></ins></strong></code></p>
+		<p>в папке, в которой вы сохранили программу. Теперь запустите её.</p>
+		<p><code>greg@earth:~/python_examples$ ./hello.py
+				<br>Hello. I am a python program.
+				<br>What is your name? Ferd Burphel
+				<br>Hello there, Ferd Burphel!
+				<br>greg@earth:~/python_examples$</code>
+		</p>
+		<p> Вот и всё. </p>
+	<h2 id="chapter 2">Пример цикла For</h2>
+	<a href="#chapter 3">К содержанию </a>
+		<p>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый
+			<br>редактор и наберите следующую программу:
+		</p>
+		<p><code>#!/usr/bin/env python
+			<br>or cntr in range(0,10):
+			<br>&#160;&#160;&#160;print cntr</code><!-- &#160;спецсимвол пробел-->
+		</p>
+		<p>Не <em>забудьте поставить символ табуляции перед строкой «print cntr».</em> Это важно. В
+			<br>Python для указания на блоки кода используются не круглые «(» и фигурные «{» скобки
+			<br>как в других языках программирования, а отступы.
+		</p>
+<table height = "100%" align = "center" border = "0" width="100%" cellpadding="8">
+	<th align="left" target = "_blank">
+		<a href=“#”>
+			<button type="button"  alt = "logo" title = "last page">
+				<?xml version="1.0" ?><svg width="25" height="25" enable-background="new 0 0 512 512" id="Layer_1" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g><linearGradient gradientUnits="userSpaceOnUse" id="SVGID_1_" x1="-0.0000027" x2="512" y1="256" y2="256"><stop offset="0" style="stop-color:#33B49D"/><stop offset="1" style="stop-color:#00A185"/></linearGradient><circle cx="256" cy="256" fill="url(#SVGID_1_)" r="256"/><linearGradient gradientUnits="userSpaceOnUse" id="SVGID_2_" x1="42.6666641" x2="469.3333435" y1="256.0005188" y2="256.0005188"><stop offset="0" style="stop-color:#00A185"/><stop offset="1" style="stop-color:#33B49D"/></linearGradient><path d="M256,469.3338623c-117.6315308,0-213.3333435-95.7018738-213.3333435-213.3333435    c0-117.6309204,95.7018051-213.333313,213.3333435-213.333313c117.6362,0,213.3333435,95.7024002,213.3333435,213.333313    C469.3333435,373.6319885,373.6362,469.3338623,256,469.3338623z" fill="url(#SVGID_2_)"/></g><polygon id="XMLID_80_" opacity="0.3" points="248.4991455,159.5013275 144,264 248.4991455,368.4992065 248.4991455,313.078949    384,313.078949 384,214.9221344 248.4991455,214.9221344  "/><polygon fill="#FFFFFF" id="XMLID_201_" points="240.4991455,151.5013275 136,256 240.4991455,360.4992065 240.4991455,305.078949    376,305.078949 376,206.9221344 240.4991455,206.9221344  "/></g></svg>
+			</button>
+		</a>
+	</th>
+	<th >
+		<a href = "#chapter 3" >
+			<button type="button" alt = "Logo" title = "К содержанию" >
+				<img	src= "../../IMG/index_center.png" alt = "Logo" border="0" >
+			</button>
+		</a>
+	</th>
+	<th align="right">
+		<a href =" http://142.93.172.35:8080/static/media/python_02_link_img.html">
+			<button type="button" alt = "Logo" title = "Next page">
+				<img src= "../../IMG/index_right.png" alt = "Logo">
+
+			</button> </a>
+
+	</th>
+</table>
+
+<!--<img src= "../../IMG/index_center.svg" alt = "Logo">-->
+
+</body>
+</html>
