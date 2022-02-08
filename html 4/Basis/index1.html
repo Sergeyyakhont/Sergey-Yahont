@@ -1,105 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Task 1</title>
+    <meta charset="utf-8">
+    <title>Task 1</title>
 </head>
-<body>
-<table height = "400px" align = "center" border = "0" width="100%" cellpadding="8">
-	<tr >
-		<th width = "40%" align="left">
-			<h1 >HOW-TO: Программа на Python, Часть 1</h1>
+    <body>
+        <table width="100%">
+            <tr>
+                <th align="left">
+                    <h1>HOW-TO: Программа на Python, Часть 1</h1>
+                    <ul>
+                        <li><a href="index1.html"><em> Программа на Python &#8212; часть 1</em></a></li>
+                        <li><a href="index2.html"><em> Программа на Python &#8212; часть 2</em></a></li>
+                        <li><a href="index3.html"><em> Программа на Python &#8212; часть 3</em></a></li>
+                    </ul>
+                    <h2 id="chapter 3"> Содержание </h2>
+                    <h3>HOW-TO: Программа на Python, Часть 1</h3>
+                </th>
+                <th  align="right" >
+                    <IMG src="../IMG/IconPython.png"  alt="Logo_python" title ="python">
+                </th>
+            </tr>
+        </table>
+        <ul>
+            <li><a href="#chapter 1"> Наша первая программа</a></li>
+            <li><a href="#chapter 2"> Пример цикла For</a></li>
+        </ul>
+        <p> Из множества существующих языков программирования Python &#8212; один из самых лёгких
+            <br>в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился.
+            <br>Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не
+            <br>обращают внимания при выборе языка для изучения. В этой статье мы рассмотрим
+            <br>создание консольных приложений, а в следующей &#8212; программирование графических
+            <br>интерфейсов (<u>GUI</u>). Давайте создадим простую программу прямо сейчас.
+        </p>
 
-			<ul>
-				<li> <a href = "http://142.93.172.35:8080/static/media/python_01_link.html"><em> Программа на Python &#8212; часть 1</em></a></li>
-				<li> <a href = "http://142.93.172.35:8080/static/media/python_02_link.html"><em> Программа на Python &#8212; часть 2</em></a></li>
-				<li> <a href = "http://142.93.172.35:8080/static/media/python_03_link.html"><em> Программа на Python &#8212; часть 3</em></a></li>
-			</ul>
-
-			<h2 id= "chapter 3"> Содержание </h2>
-			<h3>HOW-TO: Программа на Python, Часть 1</h3>
-		</th>
-		<th width = "60%" align="left">
-			<IMG src="../IMG/IconPython.png" align="left" alt="Logo">
-		</th>
-
-	</tr>
-</table>
-
-			<ul>
-				<li> <a href = "#chapter 1"> Наша первая программа</a></li>
-				<li> <a href = "#chapter 2"> Пример цикла For</a></li>
-			</ul>
-
-		<p>		Из множества существующих языков программирования Python &#8212; один из самых лёгких
-			<br>в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился.
-			<br>Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не
-			<br>обращают внимания при выборе языка для изучения. В этой статье мы рассмотрим
-			<br>создание консольных приложений, а в следующей &#8212; программирование графических
-			<br>интерфейсов (<u>GUI</u>). Давайте создадим простую программу прямо сейчас.
-		</p>
-	
-	<h2 id="chapter 1"> Наша первая программа</h2>
-	<a href="#chapter 3">К содержанию </a>
-		<p> Наберём код в текстовом редакторе (например, в <strong>gedit</strong>). Потом мы разберёмся, что делает
-			<br>каждая строка и пойдём дальше.
-		</p>
-		<p> Введите эти 4 строки:		</p>
-		<p> <code>#!/usr/bin/env python
-			<br>print 'Hello. I am a python program.'
-			<br>name = raw_input("What is your name?")
-			<br>print "Hello there, " + name + "!"</code>
-		</p>
-		<p> Это всё. Сохраните файл как <strong>hello.py</strong> в любом месте. Я предлагаю сохранить его в папке
-			<br><strong>python_examples</strong> в домашнем каталоге. Этот пример показывает, как просто написать
-			<br>программу на Python. Для запуска программы нужно сделать её файл исполняемым. Для
-			<br>этого введите в терминале
-		</p>
-		<p><code><strong><ins><em>chmod +x hello.py</em></ins></strong></code></p>
-		<p>в папке, в которой вы сохранили программу. Теперь запустите её.</p>
-		<p><code>greg@earth:~/python_examples$ ./hello.py
-				<br>Hello. I am a python program.
-				<br>What is your name? Ferd Burphel
-				<br>Hello there, Ferd Burphel!
-				<br>greg@earth:~/python_examples$</code>
-		</p>
-		<p> Вот и всё. </p>
-	<h2 id="chapter 2">Пример цикла For</h2>
-	<a href="#chapter 3">К содержанию </a>
-		<p>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый
-			<br>редактор и наберите следующую программу:
-		</p>
-		<p><code>#!/usr/bin/env python
-			<br>or cntr in range(0,10):
-			<br>&#160;&#160;&#160;print cntr</code><!-- &#160;спецсимвол пробел-->
-		</p>
-		<p>Не <em>забудьте поставить символ табуляции перед строкой «print cntr».</em> Это важно. В
-			<br>Python для указания на блоки кода используются не круглые «(» и фигурные «{» скобки
-			<br>как в других языках программирования, а отступы.
-		</p>
-<table height = "100%" align = "center" border = "0" width="100%" cellpadding="8">
-	<th align="left" target = "_blank">
-			<button type="button" alt = "Logo" title = "last page">
-				<img src= "../IMG/index_left.png" alt = "Logo">
-			</button>
-	</th>
-	<th >
-		<a href = "#chapter 3" >
-			<button type="button" alt = "Logo" title = "К содержанию" >
-				<img src= "../IMG/index_center.png" alt = "Logo">
-			</button>
-		</a>
-	</th>
-	<th align="right">
-		<a href =" http://142.93.172.35:8080/static/media/python_02_link_img.html">
-			<button type="button" alt = "Logo" title = "Next page">
-				<img src= "../IMG/index_right.png" alt = "Logo">
-			</button> </a>
-
-	</th>
-</table>
-
-
-
-</body>
+        <h2 id="chapter 1"> Наша первая программа</h2>
+        <a href="#chapter 3">К содержанию </a>
+        <p> Наберём код в текстовом редакторе (например, в <strong>gedit</strong>). Потом мы разберёмся, что делает
+            <br>каждая строка и пойдём дальше.
+        </p>
+        <p> Введите эти 4 строки: </p>
+        <p><code>#!/usr/bin/env python
+            <br>print 'Hello. I am a python program.'
+            <br>name = raw_input("What is your name?")
+            <br>print "Hello there, " + name + "!"</code>
+        </p>
+        <p> Это всё. Сохраните файл как <strong>hello.py</strong> в любом месте. Я предлагаю сохранить его в папке
+            <br><strong>python_examples</strong> в домашнем каталоге. Этот пример показывает, как просто написать
+            <br>программу на Python. Для запуска программы нужно сделать её файл исполняемым. Для
+            <br>этого введите в терминале
+        </p>
+        <p><code><strong>
+            <ins><em>chmod +x hello.py</em></ins>
+        </strong></code></p>
+        <p>в папке, в которой вы сохранили программу. Теперь запустите её.</p>
+        <p><code>greg@earth:~/python_examples$ ./hello.py
+            <br>Hello. I am a python program.
+            <br>What is your name? Ferd Burphel
+            <br>Hello there, Ferd Burphel!
+            <br>greg@earth:~/python_examples$</code>
+        </p>
+        <p> Вот и всё. </p>
+        <h2 id="chapter 2">Пример цикла For</h2>
+        <a href="#chapter 3">К содержанию </a>
+        <p>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый
+            <br>редактор и наберите следующую программу:
+        </p>
+        <p><code>#!/usr/bin/env python
+            <br>or cntr in range(0,10):
+            <br>&#160;&#160;&#160;print cntr</code><!-- &#160;спецсимвол пробел-->
+        </p>
+        <p>Не <em>забудьте поставить символ табуляции перед строкой «print cntr».</em> Это важно. В
+            <br>Python для указания на блоки кода используются не круглые «(» и фигурные «{» скобки
+            <br>как в других языках программирования, а отступы.
+        </p>
+        <table   width="100%" >
+            <tr>
+                <th align="left" >
+                    <a href="#">
+                        <img src="../IMG/index_left.png"  alt="Logo left" title="last page">
+                    </a>
+                </th>
+                <th align="center">
+                    <a href="#chapter 3">
+                            <img src="../IMG/index_center.png" alt="Logo center" title="К содержанию">
+                    </a>
+                </th>
+                <th align="right">
+                    <a href="#">
+                            <img src="../IMG/index_right.png" alt="Logo right" title="next page">
+                    </a>
+                </th>
+            </tr>
+        </table>
+    </body>
 </html>
