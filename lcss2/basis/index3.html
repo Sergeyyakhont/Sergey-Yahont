@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>List and container</title>
+
+    <style media = screen>
+        body {
+            background: black;
+            width: 100%;
+            height: 100%;
+        }
+        div {
+            box-sizing: border-box;
+            display: inline-block;
+            width: 70%;
+            background-color: white ;
+            font-family: serif;
+            font-size: 14px;
+        }
+        .block_navi {
+            display: block;
+            float: left;
+            background-color: lightgray;
+            width: 15em;
+            padding: 2px;
+            text-align: left;
+        }
+        .empty {
+            width: auto;
+            margin: 5px 5px 5px 5px;
+            background-color: gainsboro;
+        }
+        .article {
+            display: block;
+            margin-left: -5px ;
+            margin-bottom: 0.2em;
+            padding: 2px;
+            overflow: auto;
+            width: auto;
+            background-color: darkgray;
+        }
+        .photo {
+            display: block;
+            float: right;
+            width: 30%;
+            margin-left: 10px;
+            background-color: darkgray;
+            background-position: right;
+        }
+        span {
+            text-align: left;
+            font-weight: bold}
+        .basement {
+            padding: 5px;
+            margin: 0 5px 5px 5px;
+            background-color: lightgray;
+            width: auto;
+        }
+
+    </style>
+</head>
+    <body >
+        <div>
+            <div class="empty">
+                <div class="block_navi">
+                    <p>
+                    <span> Блок навигации</span>
+                    </p>
+                    <ul>
+                        <li>
+                            Ширина 15em
+                        </li>
+                        <li>
+                            Должен присутствовать цвет фона
+                        </li>
+                        <li>
+                            Располагается слева
+                        </li>
+                        <li>
+                            Блок навигиции наполните контентом достаточным, чтобы по высоте он начинал захватывать
+                            вторую статью, как показано в данном примере
+                        </li>
+                    </ul>
+                </div>
+                <div class = "article">
+                    <p>
+                        <span> Статья 1 </span>
+                    </p>
+                    Размер блока:<br>
+                    Занимает всю доступную ширину<br>
+                    Должен присутствовать цвет фона<br>
+                    Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom
+
+                </div>
+                <div class = "article">
+                    <p>
+                        <span> Статья 2 </span>
+                    </p>
+                    <p>
+                    Размер блока:<br>
+                    Занимает всю доступную ширину<br>
+                    Должен присутствовать цвет фона<br>
+                    Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom
+                    Картинка вставлена при помощи тега, плавание организовано по правому краю внутри
+                    данной статьи для этой картинки
+                        <img class="photo" src="img/Mail-icon.png" alt="logo" >
+                    Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom
+                    Картинка вставлена при помощи тега, плавание организовано по правому краю внутри
+                    данной статьи для этой картинки
+                    Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom
+                    Картинка вставлена при помощи тега, плавание организовано по правому краю внутри
+                    данной статьи для этой картинки
+
+                    </p>
+                </div>
+            </div>
+            <div class="basement">
+                    Нижний блок,подвал. Занимает всю доступную ширину. Высота определяется помоещенным контентом.
+                    Нижний блок,подвал. Занимает всю доступную ширину. Высота определяется помоещенным контентом.
+                </div>
+            </div>
+
+    </body>
+</html>
