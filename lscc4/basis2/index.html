@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>table</title>
+    <style>
+        body {
+            background-color: black;
+            width: 100%;
+
+        }
+        .page {
+            position: absolute;
+            margin: 200px 100px 100px 100px;
+            background-color: white;
+            width: 800px;
+            height: 300px;
+            font-family: serif;
+            font-size: 14px;
+        }
+        table{
+            font-style: normal;
+            font-size: 14px;
+            width: 98%;
+            margin: 10px;
+            border-spacing:  5px 1px;
+
+        }
+        th,td {
+            padding: 5px;
+            border-bottom-style: dotted;
+            border-right-style: dotted;
+        }
+
+        tr:nth-child(2n+1) {
+            background-color:lightgray;
+        }
+        tr:nth-child(1) {
+            background-color:gray;
+        }
+        tr:hover:nth-child(2n+1){
+            background: yellow;
+        }
+        tr:hover:nth-child(2n){
+            background: red;
+        }
+        p{
+            text-align: center;
+            font-family: serif;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<div class = "page">
+    <table>
+        <tr>
+            <th>ФИО</th>
+            <th>пол</th>
+            <th>должность</th>
+            <th>дата рож.</th>
+            <th>Данные01</th>
+            <th>Данные01</th>
+        </tr>
+        <tr>
+            <th>Иванов Иван Иванович</th>
+            <td> М </td>
+            <td>начальник</td>
+            <td> 01.01.1960</td>
+            <td>4567</td>
+            <td>3453</td>
+        </tr>
+        <tr>
+            <th>Петрова Илона Петровна</th>
+            <td> Ж </td>
+            <td> секретарь</td>
+            <td>01.01.1989</td>
+            <td>98795</td>
+            <td>46523</td>
+        </tr>
+        <tr>
+            <th> Сидоров Илья Игоревич </th>
+            <td> М </td>
+            <td> бухгалтер</td>
+            <td>01.01.1979</td>
+            <td>743434</td>
+            <td>987979</td>
+        </tr>
+        <tr>
+            <th> Пупин Фёдор Фёдорович </th>
+            <td>М</td>
+            <td>водитель</td>
+            <td>01.01.1963</td>
+            <td>74323434</td>
+            <td>9232379</td>
+        </tr>
+        <tr>
+            <th>Крупин Сергей Иванович</th>
+            <td>М</td>
+            <td>водитель2</td>
+            <td>01.01.1983</td>
+            <td>3234534</td>
+            <td>923123379</td>
+        </tr>
+    </table>
+        <p>
+                  ДАННЫЕ О СОТРУДНИКАХ
+        </p>
+</div>
+
+</body>
+</html>
