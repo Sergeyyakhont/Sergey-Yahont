@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Table</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div.menu {
+            margin: 20px;
+            position: absolute;
+            width: 100%;
+        }
+        div.menu > div {
+            font-family: serif;
+            font-size: 20px;
+            background-color: lightgray;
+            border: solid black 3px;
+            border-radius: 5px;
+            position: relative;
+            cursor: pointer;
+            display: inline;
+            width: 15%;
+            float: left;
+            }
+        div.menu1 {
+            width: 100%;
+            display: none;
+        }
+        div.menu1 > div {
+            background-color: lightgray;
+            border: solid black 3px;
+            border-radius: 5px;
+            cursor: pointer
+        }
+        div.menu > div:hover div.menu1 {
+            display: inline-block;
+            position: absolute;
+            left: 1%; top: 100%; z-index: 1 ;}
+        /*media*/
+        @media screen and  (max-width: 1000px) {
+            div.menu > div {
+                display: block;
+                float: none;
+                width: 30%;
+            }
+            div.menu > div:hover div.menu1 {
+                display: inline-block;
+                position: absolute;
+                left: 100%; top: 0; z-index: 1 ;}
+            }
+    </style>
+
+    <body>
+        <div class="page">
+            <div class='menu'>
+                <div >
+                    Понедельник
+                </div>
+                <div  >
+                    Вторник
+                </div>
+                <div >
+                    Среда
+                    <div class='menu1'>
+                        <div>Завтрак</div>
+                        <div>Обед</div>
+                        <div>Ужин</div>
+                    </div>
+                </div>
+                <div >
+                    Четверг
+                </div>
+                <div >
+                    Пятница
+                </div>
+                <div >
+                    Суббота
+                </div>
+            </div>
+            </div>
+    </body>
+</html>

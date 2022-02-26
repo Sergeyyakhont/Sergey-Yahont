@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>hover</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: black;
+            width: 100%;
+
+        }
+        .page {
+            position: absolute;
+            margin: 200px 200px;
+            background-color: white;
+            width: 600px;
+            height: 600px;
+            font-family: serif;
+            font-size: 14px;
+            }
+
+        .one  {
+            margin: 0 10px;
+            text-align:  justify;
+            height: 100px;
+            border-width: thin;
+            border-radius: 0  10px;
+            display: block;
+            border-collapse: collapse;
+            padding: 10px 10px ;
+            border-style: solid;
+            text-indent: 20px;
+        }
+       h1{ padding: 10px;}
+       h2{ padding: 10px;}
+        li a:before{
+            content: url("img/index3.jpeg");
+        }
+        li a:before{
+            content: url("img/index3.jpeg");
+        }
+        li a:before{
+            content: url("img/index3.jpeg");
+        }
+        ol {
+            position: relative;
+            width: 200px;
+        }
+        li a {
+            display: block;
+        }
+        li a img {
+            display: none;
+            position: absolute;
+            top: 0;
+            border: 0;
+            left: 100%;
+        }
+        li a:hover img {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class = "page">
+        <h1>
+            Форматы файлов
+        </h1>
+                <div class="one">
+                    .Doc или .doc (от англ. <img src="img/index1.png" alt = "logo1"> <a href="#"> document</a>) -
+                    расширение имени файла, используемое для файлов,
+                    представляющих текст, с разметкой или без. Расширение .DOC часто использовалось для
+                    обозначения простых текстовых файлов без формирования, однако позже стало
+                    использоваться для двоичных форматов с разметкой.<br>
+                     <a href="#"> Документ MS Word</a> <img src="img/index2.jpeg" alt = "logo2">
+
+                </div>
+                <div class="one">
+                        Portable Document Format (<img src="img/index1.png" alt = "logo1"> <a href="#"> PDF</a>) -
+                    межплатформенный формат электронных документов,
+                    разработанный фирмой Adobe Systems с использованием ряда возможностей языка
+                    Postscript.<br>
+                    <a href="#"> Документ PDF</a> <img src="img/index4.png" alt = "logo4">
+                </div>
+                <div class="one">
+                        ZIP- популярный формат сжатия данных и архивации файлов. Файл в этом формате
+                    обычно имеет расширение (<img src="img/index1.png" alt = "logo1"> <a href="#"> .zip</a>) и хранит
+                    в сжатом или несжатом виде один или несколько
+                    файлов, которое можно из него извлечь путем распаковки с помощью специальной
+                    программы.<br>
+                    <a  href="#" style="background: url(img/index5.gif ) no-repeat ; padding-right: 10px; float: left " >Архив</a>
+                </div>
+        <h2>
+            Это список файлов
+        </h2>
+        <ol>
+            <li><a class="list1" href="#">Документ MS Word<img src="img/index2.jpeg" alt="logo" /></a></li>
+        </ol>
+        <ol>
+            <li><a class="list1" href="#">Документ PDF <img src="img/index4.png" alt="logo" /></a></li>
+        </ol>
+        <ol>
+            <li><a class="list1" href="#">Архив<img src="img/index5.gif" alt="logo" /></a></li>
+        </ol>
+    </div>
+</body>
+</html>
