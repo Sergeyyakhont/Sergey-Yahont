@@ -1,0 +1,12 @@
+body{
+    background: black;
+}
+.grid-container{
+    background: white;
+}
+li {
+    color: #33B49D;
+}
+h2,h5 {
+    color: #33B49D;
+}

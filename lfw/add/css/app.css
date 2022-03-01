@@ -1,0 +1,12 @@
+body{
+    background: black;
+}
+.container{
+    background: white;
+}
+li a {
+    color: #33B49D;
+}
+h2,h5 {
+    color: #33B49D;
+}
